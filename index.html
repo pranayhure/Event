@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+   
+</head>
+
+<body onload="contendLoad()">
+    <button onclick="clickBtn()">ONE click me</button> <br /> <br />
+    <button  ondblclick="dblClickBtn()">DOUBLE click me</button>
+<br/><br/>
+    <img src="https://www.suntiros.com/wp-content/uploads/2017/11/Vijay-Wallpapers.jpg"height="200px"width="150px"
+    onmouseover="mOver()"
+    onmousemove="mMove()"
+    /> 
+<br/> <br/>
+
+    <input type="text" onchange="changeTxt()" placeholder="Type here" onkeypress="pressKey()" onkeydown="downKey()"
+        onkeyup="upKey()">
+
+
+
+    <script>
+        function clickBtn() {
+            console.log("Hare Ram")
+        }
+
+        function dblClickBtn() {
+            console.log("Hare Krishana")
+        }
+
+        function mOver() {
+            console.log("AAAAAAAAAAAAAAAAAAAAAA")
+        }
+
+        function mMove() {
+            console.log("BBBBBBBBBBBBBBBBBBBBBB")
+        }
+
+        function mLeave() {
+            console.log("CCCCCCCCCCCCCCCCCCCC")
+        }
+
+        function contendLoad() {
+            console.log("all body content load succesfully...")
+        }
+
+
+
+        function changeTxt() {
+            alert("change the content of input box")
+        }
+        function pressKey() {
+            console.log('you press the key')
+        }
+
+        function downKey() {
+            console.log("you down the key")
+        }
+
+        function upKey() {
+            console.log("you up the key")
+        }
+    </script>
+</body>
+
+</html>
